@@ -10,6 +10,8 @@ public class PlayerControlls : MonoBehaviour
     Rigidbody2D rb;
     Animator animator;
     public float moveSpeed = 1f;
+    public PlayerTool currentTool = new PlayerTool(PlayerToolClass.MOWER);
+    public FieldTilemap tilemapScript;
 
     void Start()
     {
@@ -50,5 +52,20 @@ public class PlayerControlls : MonoBehaviour
 
     }
 
+    void OnUseTool ()
+    {
+        if (currentTool != null)
+        {
+
+            tilemapScript.ApplyToolToTile(currentTool);
+
+
+        }
+    }
+
+
 
 }
+
+
+
