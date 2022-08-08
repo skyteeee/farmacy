@@ -63,6 +63,31 @@ public class PlayerControlls : MonoBehaviour
         }
     }
 
+    void OnMower ()
+    {
+        currentTool = new PlayerTool(PlayerToolClass.MOWER);
+    }
+
+    void OnPlough()
+    {
+        currentTool = new PlayerTool(PlayerToolClass.PLOUGH);
+    }
+
+    void OnWater()
+    {
+        currentTool = new PlayerTool(PlayerToolClass.WATER);
+    }
+
+    void OnSeed()
+    {
+        currentTool = new PlayerTool(PlayerToolClass.SEED);
+    }
+
+    void OnPick()
+    {
+        currentTool = new PlayerTool(PlayerToolClass.PICK);
+    }
+
 
 
 }

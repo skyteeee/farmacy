@@ -1416,13 +1416,13 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      soil_34: -1806798116
       soil_52: -917652214
       soil_51: -259531905
       soil_10: 301898195
       soil_3: -2023007452
       soil_7: -2032860085
       soil_1: 528970163
+      soil_34: -1806798116
       soil_54: 551777544
       soil_30: 455634131
       soil_28: -1782755975
