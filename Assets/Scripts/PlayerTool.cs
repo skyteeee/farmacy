@@ -4,16 +4,17 @@ using UnityEngine;
 
 public enum PlayerToolClass
 {
-    NONE, MOWER, PLOUGH, SEED, WATER, PICK
+    NONE, MOWER, PLOUGH, SEED, WATER, PICK, UNPICK, TIME
 }
 
 public class PlayerTool
 {
     public PlayerToolClass clazz;
-
-    public PlayerTool(PlayerToolClass toolClass = PlayerToolClass.NONE)
+    public CropType cropType = CropType.NONE;
+    public PlayerTool(PlayerToolClass toolClass = PlayerToolClass.NONE, CropType cropType = CropType.NONE)
     {
         clazz = toolClass;
+        this.cropType = cropType;
     }
 
 }

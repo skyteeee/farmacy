@@ -80,7 +80,7 @@ public class PlayerControlls : MonoBehaviour
 
     void OnSeed()
     {
-        currentTool = new PlayerTool(PlayerToolClass.SEED);
+        currentTool = new PlayerTool(PlayerToolClass.SEED, CropType.Tomato);
     }
 
     void OnPick()
