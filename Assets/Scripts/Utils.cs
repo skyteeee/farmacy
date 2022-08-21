@@ -40,4 +40,9 @@ public class Utils
         return LoadTile(namesList[index]);
     }
 
+    public static Sprite LoadSprite(string name)
+    {
+        return Resources.Load<Sprite>("Sprites/" + name);
+    }
+
 }
